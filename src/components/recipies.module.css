@@ -12,6 +12,7 @@
     flex-direction: column;
     border-radius: 0.4rem;
     transition: all 0.2s ease-out;
+    min-height: 37vh;
   }
 .recipeItemImage {
       width: 100%;
@@ -55,6 +56,8 @@
   .recipes{ 
   grid-template-columns: repeat(3, 1fr);
   max-width: 75%;
+  height: 100%;
+  overflow: visible;
   }
 
 }
