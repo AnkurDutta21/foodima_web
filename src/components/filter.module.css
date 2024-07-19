@@ -1,0 +1,102 @@
+.recipesFilter{
+  display: none;
+}
+.recipesFilterHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .recipesFilterTitle {
+    font-size: 1.6rem;
+  }
+  
+  .clearFilter {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    color: orangered;
+  }
+  
+  .filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    animation: slideDown 0.2s ease-out forwards;
+    transition: all 0.2s ease-out;
+    margin-top: 0.5rem;
+  }
+  
+  .filterLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .filterButton {
+    opacity: 0;
+  }
+  
+  .filterButtonIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25%;
+    transition: all 0.2s ease-out;
+  }
+  
+  .filterButton:checked + .filterButtonIcon {
+    background-color: black;
+  }
+  
+  .checkmark {
+    fill: hsl(0, 0%, 95%);
+    padding: 0.5rem;
+  }
+  
+  .collection {
+    margin-top: 2rem;
+    transition: all 0.2s ease-out;
+  }
+  
+  .collectionHeader {
+    width: 100%;
+  }
+  
+  .collectionTitle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .collectionInput {
+    opacity: 0;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-1rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .recipesFilter{
+      display: none;
+    }
+  }
+  @media(min-width:1024px ){
+    .recipesFilter{
+      display: block;
+      max-width: 20%;
+    }
+  }
+  

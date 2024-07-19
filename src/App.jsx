@@ -1,10 +1,14 @@
 import React from 'react'
+import MainContainer from './layout/MainContainer'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div>
-      app
-    </div>
+    <>
+      <MainContainer>
+        <Home/>
+      </MainContainer>
+    </>
   )
 }
 

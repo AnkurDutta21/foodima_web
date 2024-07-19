@@ -1,0 +1,120 @@
+
+.customizeData {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem 1rem 1rem;
+    gap: 2rem;
+    position: relative;
+
+}
+.customizeData h1{
+    display: none;
+}
+.customizeData i {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f5;
+    border-radius: 0.2rem;
+    padding: 1rem;
+}
+.searchDiv{
+    position: relative;
+    width: 90%;
+}
+.searchDiv input {
+    width: 100%;
+    padding-left: 3rem;
+    background-color: #f4f4f5;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.75rem;
+    height: 3.5rem;
+    font-size: 0.875rem;
+    outline: 0;
+    border: none;
+}
+
+.searchDiv input::placeholder {
+    color: #9ca3af;
+}
+
+.searchDiv input:focus-visible {
+    outline: none;
+}
+
+.inputSearch {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+.newestBtn{
+    display: none;
+}
+.filterMenu{
+    display: none;
+}
+.recipieContainer{
+    display: block;
+    margin-top: 2rem;
+}
+.toggleMenu{
+    max-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 124px;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.5) */
+    background-color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .customizeData h1{
+        display: none;
+    } 
+    .newestBtn{
+        display: none;
+    }
+    .customizeData i{
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .customizeData i{
+        display: none;
+    }
+    .searchDiv{
+        width: 40%;
+    }
+    .customizeData h1{
+        display: block;
+    }
+    .newestBtn{
+        display: block;
+        background-color: #000;
+        border: none;
+        border-radius: 100px;
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 0.5rem 1.5rem;
+        transition: all 0.1s ease-out;
+    }
+    .filterMenu{
+        display: flex;
+    }
+    .recipieContainer{
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+    .toggleMenu{
+        display: none;
+    }
+}
